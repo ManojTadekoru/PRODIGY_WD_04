@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .icon {
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .icon img {
+        text-align: center;
+        width: 50px; /* Adjust the size of the icons */
+        height: auto;
+    }
+
+    @media (max-width: 600px) {
+        .icon img {
+            width: 40px; /* Adjust for smaller screens */
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>Contact Me</h1>
+<div class="container">
+    <h3><strong style="color: red;">Email :</strong> manojtadekoru1247@gmail.com</h3>
+    <h3><strong style="color: red;">Phone :</strong> +91 9063959888</h3>
+<div class="icons">
+    <a class="icon" href="https://www.instagram.com/__manoj__nani__/" target="_blank">
+        <img src="{% static 'images/insta.avif' %}" alt="Instagram">
+    </a>
+    <a class="icon" href="https://www.linkedin.com/in/manoj-kumar-tadekoru-5a7958216/" target="_blank">
+        <img src="{% static 'images/linkedin.webp' %}" alt="LinkedIn">
+    </a>
+    <a class="icon" href="https://github.com/ManojTadekoru" target="_blank">
+        <img src="{% static 'images/GitHub.png' %}" alt="GitHub">
+    </a>
+    <a class="icon" href="{% static 'pdfs/Manoj_Resume.pdf' %}" target="_blank">
+        <img src="{% static 'images/image.png' %}" alt="Resume">
+    </a>
+</div>
+</div>
+
+</body>
+</html>

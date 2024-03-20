@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px; /* Add margin around the box */
+        overflow: auto; /* Ensure content doesn't overlap */
+    }
+
+    .text {
+        display: block;
+    }
+
+    #boxes {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box {
+        color: aliceblue;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        flex-basis: 30%; /* Adjust width of boxes */
+    }
+    .box h2 {
+        text-align: center;
+        color: red;
+    }
+
+    @media screen and (max-width: 768px) {
+        #boxes {
+            flex-direction: column; /* Stack boxes vertically on smaller screens */
+        }
+
+        .box {
+            flex-basis: 100%; /* Boxes take full width on smaller screens */
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1 style="color: aliceblue; text-align: center;">About Me</h1>
+
+<div class="container">
+    <article class="text">
+        <p>I'm an enthusiastic, self-motivated individual with a passion for excellence in everything I do. Reliability and responsibility are at the core of my work ethic, ensuring that I consistently deliver results that exceed expectations.
+            One of my strengths lies in my ability to perform well under pressure, maintaining composure and focus even when faced with tight deadlines.
+        </p>
+    </article>
+</div>
+
+<div id="boxes">
+    <div class="box" id="leftbox">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java</li><br>
+            <li>Python</li><br>
+            <li>HTML</li><br>
+            <li>CSS</li><br>
+            <li>Django</li><br>
+            <li>JS</li>
+        </ul>
+    </div>
+
+    <div class="box" id="middlebox">
+        <h2>Experience</h2>
+        <ul>
+            <li>APSSDC - Web Developer</li><br>
+            <li>Codeswap Solutions - Web Developer</li><br>
+            <li>Salesforce - Developer</li>
+        </ul>
+    </div>
+
+    <div class="box" id="rightbox">
+        <h2>Education</h2>
+        <ul>
+            <li>SRM University AP - 2025</li><br>
+            <li>Narayana Junior College - 2021</li><br>
+            <li>Sri Chaitanya School - 2019</li><br>
+            
+            
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
